@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="en" >
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="author" content="Lucas M." />
+      <link rel="shortcut icon" href="../img/favicon.ico" />
+    <title>Uso de filtros - EstaEsLaPagina</title>
+    <link rel="stylesheet" href="../css/theme.css" />
+    <link rel="stylesheet" href="../css/theme_extra.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/styles/github.min.css" />
+        <link href="../css/extra.css" rel="stylesheet" />
+    
+      <script>
+        // Current page data
+        var mkdocs_page_name = "Uso de filtros";
+        var mkdocs_page_input_path = "filtros.md";
+        var mkdocs_page_url = null;
+      </script>
+    
+    <!--[if lt IE 9]>
+      <script src="../js/html5shiv.min.js"></script>
+    <![endif]-->
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/highlight.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/yaml.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/django.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.8.0/languages/rust.min.js"></script>
+      <script>hljs.highlightAll();</script> 
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+        ga('create', "xxxxxx", "xxxxxx");
+        ga('send', 'pageview');
+      </script>
+    
+</head>
+
+<body class="wy-body-for-nav" role="document">
+
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side stickynav">
+    <div class="wy-side-scroll">
+      <div class="wy-side-nav-search">
+          <a href=".." class="icon icon-home"> EstaEsLaPagina
+        </a><div role="search">
+  <form id ="rtd-search-form" class="wy-form" action="../search.html" method="get">
+      <input type="text" name="q" placeholder="Search docs" aria-label="Search docs" title="Type search term here" />
+  </form>
+</div>
+      </div>
+
+      <div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Navigation menu">
+              <p class="caption"><span class="caption-text">APS</span></p>
+              <ul class="current">
+                  <li class="toctree-l1"><a class="reference internal" href="../sesion/">Manejo de cuentas</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../drive/">Uso básico de Drive</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../intro_sheets/">Uso básico de Google Sheets</a>
+                  </li>
+                  <li class="toctree-l1 current"><a class="reference internal current" href="./">Uso de filtros</a>
+    <ul class="current">
+    <li class="toctree-l2"><a class="reference internal" href="#introduccion">Introducción</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#activando-filtro">Activando filtro</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#ordenar">Ordenar</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#filtrar-por-valor">Filtrar por valor</a>
+    </li>
+    <li class="toctree-l2"><a class="reference internal" href="#filtrar-mas-de-un-valor">Filtrar más de un valor</a>
+    </li>
+    </ul>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Instalaciones</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../ver_tipo_so/">Ver Sistema Operativo</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../instalar_obsidian/">Instalación y puesta en marcha de Obsidian</a>
+                  </li>
+                  <li class="toctree-l1"><a class="reference internal" href="../instalar_calibre/">Instalación y puesta en marcha de Calibre</a>
+                  </li>
+              </ul>
+              <p class="caption"><span class="caption-text">Descargas</span></p>
+              <ul>
+                  <li class="toctree-l1"><a class="reference internal" href="../torrent/">Descargar archivos</a>
+                  </li>
+              </ul>
+      </div>
+    </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap">
+      <nav class="wy-nav-top" role="navigation" aria-label="Mobile navigation menu">
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="..">EstaEsLaPagina</a>
+        
+      </nav>
+      <div class="wy-nav-content">
+        <div class="rst-content"><div role="navigation" aria-label="breadcrumbs navigation">
+  <ul class="wy-breadcrumbs">
+    <li><a href=".." class="icon icon-home" aria-label="Docs"></a></li>
+          <li class="breadcrumb-item">APS</li>
+      <li class="breadcrumb-item active">Uso de filtros</li>
+    <li class="wy-breadcrumbs-aside">
+    </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+            <div class="section" itemprop="articleBody">
+              
+                <h1 id="filtros">Filtros</h1>
+<h2 id="introduccion">Introducción</h2>
+<p>La función FILTRO en Google Sheets permite filtrar datos de una tabla, devolviendo solo aquellas filas que cumplen con criterios específicos establecidos por el usuario. Esta función mantiene intacta la información original y se actualiza automáticamente a medida que se añaden nuevos datos al rango especificado.</p>
+<p>Para la utilización de "filtros" es necesario contar con una hoja ya depurada, es decir que las fechas figuren como fechas, el texto como texto y los números como números.</p>
+<p>Vamos a ver diferentes aspectos con una hoja real que utilicé en el pasado.</p>
+<p><img alt="" src="../files/CAP_227.png" /></p>
+<p>Notemos algunos detalles:</p>
+<ul>
+<li>La hoja en la que estoy posicionado se llama "EJEMPLO_NOV_DIC_2023".</li>
+<li>El nombre del archivo es "MESAS_MIAS".</li>
+<li>Puedo saber que está activado el filtro porque en la barra de herramientas, el ícono con forma de embudo está verde. Además aparece una especie de flecha hacia abajo en cada "Título" del encabezado.</li>
+<li>El filtro está aplicado hasta la fila "13" y la columna "I". Por más que tenga datos más abajo, estos no están dentro del filtro.</li>
+<li>La primer fila oficia como encabezado de la tabla. El tamaño de la tabla está determinado por una línea verde más oscura que envuelve los datos.</li>
+<li>Los datos están ordenados de manera ascendente por "FECHA".</li>
+<li>Hay filas coloreadas, aunque sabemos que esto no influye en el filtro.</li>
+</ul>
+<h2 id="activando-filtro">Activando filtro</h2>
+<p>Seleccionamos las columnas que queramos usar y pulsamos en el ícono en forma de embudo.</p>
+<p>Para seleccionar, nos posicionamos en la primera columna, cliqueamos y arrastramos hasta la última.</p>
+<p><img alt="" src="../files/CAP_231.png" /></p>
+<p>Pulsamos el ícono "filtro".</p>
+<p><img alt="" src="../files/CAP_229.png" /></p>
+<p>Vemos que el ícono se pone oscuro, los encabezados en negrita y aparecen las flechas de filtro.</p>
+<p><img alt="" src="../files/CAP_233.png" /></p>
+<h2 id="ordenar">Ordenar</h2>
+<p>Para ordenar, nos posicionamos en la columna que establecerá el orden y pulsamos en la flecha.</p>
+<p><img alt="" src="../files/CAP_235.png" /></p>
+<p>Podemos elegir cualquiera de las tres opciones. En este caso voy a elegir orden ascendente.</p>
+<p><img alt="" src="../files/CAP_237.png" /></p>
+<p>Vemos que las fechas se ordenan y en el resto de las columnas los valores se "mueven" en bloque.</p>
+<h2 id="filtrar-por-valor">Filtrar por valor</h2>
+<p>Muchas veces, necesitamos que se muestre solo un valor o un conjunto de valores. </p>
+<p>Vamos a buscar "miércoles, 15 de noviembre" porque quiero ver qué mesas tengo en ese día.</p>
+<p>Para ello pulsamos en la "flecha" y veo que están seleccionados todos los valores.</p>
+<p><img alt="" src="../files/CAP_239.png" /></p>
+<p>Procedemos a borrar la selección, desaparecen las "palomitas". Luego pulsamos en "miércoles, 15 de noviembre" y "Aceptar".</p>
+<p><img alt="" src="../files/CAP_241.png" /></p>
+<p>Veamos el resultado.</p>
+<p><img alt="" src="../files/CAP_243.png" /></p>
+<p>Podemos ver que solo nos muestra aquellos valores en la columna que coinciden con "miércoles, 15 de noviembre".</p>
+<p>También observemos que cambió la "flecha" de "filtro". Antes aparecía como tres rayas de distinto tamaño y ahora igual al ícono de filtro.</p>
+<h2 id="filtrar-mas-de-un-valor">Filtrar más de un valor</h2>
+<p>Supongamos ahora que queremos afinar la búsqueda y no nos alcanza solo con filtrar por "FECHA", también queremos filtrar por "CARRERA".</p>
+<p>Procedemos del mismo modo que en el paso anterior. Esta vez vamos a elegir "Trabajo Social".</p>
+<p><img alt="" src="../files/CAP_245.png" /></p>
+<p>Podemos ver que el resultado esta vez quedó acotado a aquella/as fila/las que contenga/gan los <strong>dos</strong> valores filtrados.</p>
+<p><img alt="" src="../files/CAP_247.png" /></p>
+              
+            </div>
+          </div><footer>
+    <div class="rst-footer-buttons" role="navigation" aria-label="Footer Navigation">
+        <a href="../intro_sheets/" class="btn btn-neutral float-left" title="Uso básico de Google Sheets"><span class="icon icon-circle-arrow-left"></span> Previous</a>
+        <a href="../ver_tipo_so/" class="btn btn-neutral float-right" title="Ver Sistema Operativo">Next <span class="icon icon-circle-arrow-right"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <!-- Copyright etc -->
+  </div>
+
+  Built with <a href="https://www.mkdocs.org/">MkDocs</a> using a <a href="https://github.com/readthedocs/sphinx_rtd_theme">theme</a> provided by <a href="https://readthedocs.org">Read the Docs</a>.
+</footer>
+          
+        </div>
+      </div>
+
+    </section>
+
+  </div>
+
+  <div class="rst-versions" role="note" aria-label="Versions">
+  <span class="rst-current-version" data-toggle="rst-current-version">
+    
+    
+      <span><a href="../intro_sheets/" style="color: #fcfcfc">&laquo; Previous</a></span>
+    
+    
+      <span><a href="../ver_tipo_so/" style="color: #fcfcfc">Next &raquo;</a></span>
+    
+  </span>
+</div>
+    <script src="../js/jquery-3.6.0.min.js"></script>
+    <script>var base_url = "..";</script>
+    <script src="../js/theme_extra.js"></script>
+    <script src="../js/theme.js"></script>
+      <script src="../search/main.js"></script>
+    <script>
+        jQuery(function () {
+            SphinxRtdTheme.Navigation.enable(true);
+        });
+    </script>
+
+</body>
+</html>
